@@ -1,7 +1,19 @@
-@import '~normalize.css';
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+:root {
+    --primary: #ffa94d;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
 }

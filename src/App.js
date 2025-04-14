@@ -1,9 +1,8 @@
-
 function App() {
     return (
         <div className="App">
-   <h1>日本語 tiếng việtc @@</h1>
-       </div>
+            <h1>React App 日本語</h1>
+        </div>
     );
 }
 
