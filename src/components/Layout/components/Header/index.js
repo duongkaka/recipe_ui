@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Children, useEffect, useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -21,7 +21,23 @@ import Menu from '~/components/Popper/Menu';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
-    { icon: <FontAwesomeIcon icon={faLanguage} />, title: 'English' },
+    {
+        icon: <FontAwesomeIcon icon={faLanguage} />,
+        title: 'English',
+        children: {
+            title: 'Language',
+            data: [
+                {
+                    code: 'en',
+                    title: 'English',
+                },
+                {
+                    code: 'vi',
+                    title: 'Tieng Viet',
+                },
+            ],
+        },
+    },
     { icon: <FontAwesomeIcon icon={faCircleQuestion} />, title: 'Feedback and Help', to: '/feedback' },
     { icon: <FontAwesomeIcon icon={faKeyboard} />, title: 'Keyboard on keys' },
 ];
