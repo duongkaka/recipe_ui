@@ -1,0 +1,78 @@
+import { useEffect, useRef, useState } from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleXmark, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import HeadlessTippy from '@tippyjs/react/headless';
+import 'tippy.js/dist/tippy.css';
+import { Wrapper as PopperWrapper } from '~/components/Popper';
+import classNames from 'classnames/bind';
+import styles from './Search.module.scss';
+import AccountItem from '~/components/AccountItem';
+
+const cx = classNames.bind(styles);
+function Search() {
+    const [searchResult, setSearchResult] = useState([]);
+    const [searchValue, setSearchValue] = useState('');
+    const [showResult, setShowResult] = useState(true);
+    const inputRef = useRef();
+
+    useEffect(() => {
+        // fetch(`https://tiktok.fullstack.edu.vn/api/users/search?q=hoaa&type=less`)
+        fetch(`http://localhost:8081/api/search?name=hoa`)
+            .then((res) => res.json())
+            .then((res) => {
+                setSearchResult(res);
+                console.log(res);
+            });
+    }, [searchValue]);
+
+    const handlehideResult = () => {
+        setShowResult(false);
+    };
+
+    return (
+        <HeadlessTippy
+            interactive
+            visible={showResult && searchResult.length > 0}
+            render={(attrs) => (
+                <div className={cx('search-result')} tabIndex="-1" {...attrs}>
+                    <PopperWrapper>
+                        <h4 className={cx('search-title')}>Accounts</h4>
+
+                        {searchResult && searchResult.map((result) => <AccountItem key={result.di} data={result} />)}
+                    </PopperWrapper>
+                </div>
+            )}
+            onClickOutside={handlehideResult}
+        >
+            <div className={cx('search')}>
+                <input
+                    ref={inputRef}
+                    value={searchValue}
+                    placeholder="Search accounts and videos"
+                    spellCheck={false}
+                    onChange={(e) => setSearchValue(e.target.value)}
+                    onFocus={() => setShowResult(true)}
+                />
+                {!!searchValue && (
+                    <button
+                        className={cx('clear')}
+                        onClick={() => {
+                            setSearchValue('');
+                            inputRef.current.focus();
+                        }}
+                    >
+                        <FontAwesomeIcon icon={faCircleXmark} />
+                    </button>
+                )}
+                {/* <FontAwesomeIcon className={cx('loading')} icon={faSpinner} /> */}
+
+                <button className={cx('search-btn')}>
+                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                </button>
+            </div>
+        </HeadlessTippy>
+    );
+}
+
+export default Search;
