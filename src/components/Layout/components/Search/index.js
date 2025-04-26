@@ -8,6 +8,8 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
 import AccountItem from '~/components/AccountItem';
+import { useDebounce } from '~/hooks';
+import * as searchService from '~/apiService/searchService';
 
 const cx = classNames.bind(styles);
 function Search() {
@@ -17,28 +19,34 @@ function Search() {
     const [loading, setLoading] = useState(false);
 
     const inputRef = useRef();
+    const debounced = useDebounce(searchValue, 500);
 
     useEffect(() => {
         const controller = new AbortController();
         // fetch(`https://tiktok.fullstack.edu.vn/api/users/search?q=hoaa&type=less`)
-        if (!searchValue.trim()) {
+        if (!debounced) {
             setSearchResult([]);
             return;
         }
-        setLoading(true);
-        fetch(`http://localhost:8081/api/search?name=${encodeURIComponent(searchValue)}`)
-            .then((res) => res.json())
-            .then((res) => {
-                setSearchResult(res);
+        const fetchApi = async () => {
+            setLoading(true);
+            try {
+                const result = await searchService.search(debounced);
+                console.log(result);
+
+                setSearchResult(result);
+            } catch (error) {
                 setLoading(false);
-            })
-            .catch(() => {
-                setLoading(false);
-            });
+            }
+            setLoading(false);
+        };
+
+        fetchApi();
+
         return () => {
             controller.abort();
         };
-    }, [searchValue]);
+    }, [debounced]);
 
     const handlehideResult = () => {
         setShowResult(false);
