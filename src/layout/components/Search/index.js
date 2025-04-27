@@ -9,7 +9,7 @@ import classNames from 'classnames/bind';
 import styles from './Search.module.scss';
 import AccountItem from '~/components/AccountItem';
 import { useDebounce } from '~/hooks';
-import * as searchService from '~/apiService/searchService';
+import * as searchService from '~/service/searchService';
 
 const cx = classNames.bind(styles);
 function Search() {

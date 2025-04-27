@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import styles from './Button.module.scss';
+import Protypes from 'prop-types';
 
 const cx = classNames.bind(styles);
 
@@ -64,4 +65,7 @@ function Button({
     );
 }
 
+Button.propTypes = {
+    children: Protypes.node,
+};
 export default Button;

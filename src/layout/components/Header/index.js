@@ -22,6 +22,8 @@ import images from '~/assets/images';
 import Menu from '~/components/Popper/Menu';
 import { faUber } from '@fortawesome/free-brands-svg-icons';
 import Image from '~/components/Image';
+
+import { Link } from 'react-router-dom';
 import Search from '../Search';
 
 const cx = classNames.bind(styles);
@@ -65,7 +67,10 @@ function Header() {
         <header className={cx('wrapper')}>
             {/* Logo */}
             <div className={cx('inner')}>
-                <img src={images.logo} alt="Tiktok" />
+                <Link to="/">
+                    {' '}
+                    <img src={images.logo} alt="Tiktok" />
+                </Link>
 
                 {/* Search */}
                 <Search />
