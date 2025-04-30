@@ -22,8 +22,6 @@ function Search() {
     const debounced = useDebounce(searchValue, 500);
 
     useEffect(() => {
-        const controller = new AbortController();
-        // fetch(`https://tiktok.fullstack.edu.vn/api/users/search?q=hoaa&type=less`)
         if (!debounced) {
             setSearchResult([]);
             return;
@@ -42,10 +40,6 @@ function Search() {
         };
 
         fetchApi();
-
-        return () => {
-            controller.abort();
-        };
     }, [debounced]);
 
     const handlehideResult = () => {

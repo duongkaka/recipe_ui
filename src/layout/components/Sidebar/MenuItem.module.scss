@@ -1,0 +1,43 @@
+.menu-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 4px;
+
+    &.active {
+        //   background-color: #fdd9b5;
+        font-weight: bold;
+
+        .icon,
+        .title {
+            color: #d26a00; // Màu cam đậm cho active
+        }
+    }
+
+    &:hover {
+        background-color: #ffe5cc;
+
+        .icon,
+        .title {
+            color: #d26a00; // Màu cam đậm khi hover
+        }
+    }
+}
+
+.icon {
+    margin-right: 12px;
+    font-size: 26px;
+    color: #555;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-left: -16px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}

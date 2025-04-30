@@ -1,0 +1,23 @@
+.sidebar {
+    width: 356px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    padding: 16px 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+.account-item {
+    border-top: 1px solid #eee;
+}
+.account {
+    padding: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #7f7878;
+}
+.btn-see-more {
+    background-color: #fff;
+    color: #f4a261;
+    padding: 4px;
+    cursor: pointer;
+}

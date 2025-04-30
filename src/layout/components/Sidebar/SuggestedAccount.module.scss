@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-info {
+    flex: 1;
+    margin-left: 12px;
+}
+.nickname {
+    font-size: 1.6rem;
+    color: #333;
+    line-height: 1;
+}
+.icon {
+    color: rgb(130, 239, 239);
+    margin-left: 4px;
+    font-size: 1.4rem;
+}
+.name {
+    font-size: 1.2rem;
+    color: #888686;
+}
