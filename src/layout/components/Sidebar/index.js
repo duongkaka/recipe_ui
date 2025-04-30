@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { faGratipay, faWpexplorer } from '@fortawesome/free-brands-svg-icons';
-import SuggestedAccount from './SuggestedAccount';
+import SuggestedAccount from './SuggestedAcounts/SuggestedAccount';
 
 const cx = classNames.bind(styles);
 
