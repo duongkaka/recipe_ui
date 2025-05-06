@@ -1,5 +1,12 @@
+import SliderCategories from './SliderCategories';
+
 function Home() {
-    return <h2>Home page</h2>;
+    return (
+        <div>
+            <SliderCategories />
+            Posts
+        </div>
+    );
 }
 
 export default Home;

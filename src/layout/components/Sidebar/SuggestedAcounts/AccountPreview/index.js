@@ -18,7 +18,7 @@ function AccountPreview() {
                     Follow
                 </Button>
             </header>
-            <body className={cx('body')}>
+            <div className={cx('body')}>
                 <div className={cx('user-info')}>
                     <p className={cx('nickname')}>
                         <strong>Nguyen Van A</strong>
@@ -34,7 +34,7 @@ function AccountPreview() {
                     <strong className={cx('value')}>8.2M</strong>
                     <span className={cx('lable')}>Likes</span>
                 </p>
-            </body>
+            </div>
         </div>
     );
 }
