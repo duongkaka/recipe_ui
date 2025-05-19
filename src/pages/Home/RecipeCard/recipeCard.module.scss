@@ -1,15 +1,19 @@
 .card {
-    max-width: 345px;
+    max-width: 270px;
     opacity: 0;
-    transform: translateY(20px) scale(1); // đặt sẵn scale(1)
+    transform: translateY(20px) scale(1); // ??t s?n scale(1)
     animation: fadeInUp 1s ease-out forwards;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid transparent;
 
     &:hover {
         cursor: pointer;
-        transform: translateY(0) scale(1.2); // giữ translateY(0) + scale(1.2)
+        transform: translateY(0) scale(1.2); // gi? translateY(0) + scale(1.2)
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

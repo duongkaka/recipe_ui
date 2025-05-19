@@ -15,7 +15,11 @@ function Sidebar() {
             <Menu>
                 <MenuItem to="/" icon={<FontAwesomeIcon icon={faHouse} />} title={'For you'}></MenuItem>
                 <MenuItem to="/following" icon={<FontAwesomeIcon icon={faGratipay} />} title={'Folowing'}></MenuItem>
-                <MenuItem to="/live" icon={<FontAwesomeIcon icon={faWpexplorer} />} title={'LIVE'}></MenuItem>
+                <MenuItem
+                    to="/myProfile"
+                    icon={<FontAwesomeIcon icon={faWpexplorer} />}
+                    title={'My Profile'}
+                ></MenuItem>
             </Menu>
             <div className={cx('account-item')}>
                 <p className={cx('account')}>Suggested Account</p>

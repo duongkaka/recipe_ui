@@ -15,14 +15,12 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import Button from '~/components/Button';
 import classNames from 'classnames/bind';
 import styles from './RecipeCard.module.scss';
-import img1 from '~/assets/images/img1.jpg';
 
 import { motion } from 'framer-motion';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 const cx = classNames.bind(styles);
-function RecipeCard({ title, description, image }) {
-    const MotionCard = motion(Card);
+function RecipeCard({ title, description, img }) {
     return (
         <Card className={cx('card')}>
             <CardHeader
@@ -43,7 +41,7 @@ function RecipeCard({ title, description, image }) {
                 }
                 subheader="2025/05/07"
             />
-            <CardMedia component="img" height="194" image={img1} alt="Food" />
+            <CardMedia component="img" height="194" image={img} alt="Food" />
             <CardContent>
                 <Typography variant="h6" sx={{ color: 'text.secondary', fontSize: '12px', fontWeight: 600 }}>
                     Mien sao chua ngot

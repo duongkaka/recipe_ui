@@ -1,0 +1,34 @@
+.wrapper {
+    width: 1150px;
+    height: 100vh; // Chi?u cao to?n m?n h?nh
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 24px;
+    margin: 0 auto; // C?n gi?a theo chi?u ngang
+    animation: fadeInUp 1s ease forwards;
+}
+
+.menu {
+    flex: 0 0 250px; // Chi?u r?ng c? ??nh cho menu
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    flex: 1;
+    min-height: 300px; // Chi?u cao c? ??nh ho?c t?i thi?u
+    position: relative;
+    background: #f9f9f9;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ?i?u ch?nh chi?u cao th? card trong menu ?? b?ng 50% content */
+.menu :global(.card) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

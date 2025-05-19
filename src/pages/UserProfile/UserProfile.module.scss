@@ -1,0 +1,128 @@
+.profile-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    animation: fadeInUp 1s ease 0s 1 normal forwards;
+}
+
+// Th?ng tin c? b?n
+.basic-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #1890ff;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 4px 0;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .edit-btn {
+        margin-top: 10px;
+        padding: 6px 12px;
+        background-color: #1890ff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover {
+            background-color: #1473cc;
+        }
+        &:not(:first-child) {
+            margin-left: 6px;
+        }
+    }
+}
+
+// Th?ng k?
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 16px;
+
+    div {
+        text-align: center;
+
+        strong {
+            display: block;
+            font-size: 20px;
+            color: #1890ff;
+        }
+    }
+}
+
+// Tabs
+.tabs {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 10px;
+
+    .tab-btn {
+        padding: 8px 16px;
+        background-color: #f0f0f0;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 500;
+        color: #333;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #ddd;
+        }
+
+        &.active {
+            background-color: #1890ff;
+            color: white;
+        }
+    }
+}
+
+// N?i dung t?ng tab
+.tab-content {
+    margin-top: 20px;
+    padding: 16px;
+    border-top: 1px solid #eee;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.user-profile {
+    animation: fadeInUp 1s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,10 +1,3 @@
-const routes = {
-    home: '/',
-    following: '/following',
-    profile: '/@:nickname',
-    upload: '/upload',
-    search: '/search',
-    live: '/live',
-};
+const routes = {};
 
 export default routes;

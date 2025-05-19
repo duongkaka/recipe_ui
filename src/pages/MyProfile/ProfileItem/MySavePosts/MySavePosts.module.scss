@@ -1,0 +1,27 @@
+.user-save-posts {
+    padding: 10px; /* Th?m m?t ch?t kh?ng gian */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.posts-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 10px;
+    animation: fadeInUp 1s ease 0s 1 normal forwards;
+}
+.pagination-container {
+    display: flex;
+    justify-content: center; /* C?n gi?a Pagination */
+    margin: 15px 0;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

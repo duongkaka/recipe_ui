@@ -1,0 +1,44 @@
+.wapper {
+    min-width: 300px;
+}
+//avatar
+.avatarWrapper {
+    display: flex !important;
+    justify-content: center !important;
+    padding-top: 0px !important;
+}
+
+.avatar {
+    width: 100px !important;
+    height: 100px !important;
+    border: 2px solid #ccc !important;
+    object-fit: cover !important;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content {
+    display: flex !important;
+    justify-content: flex-start !important;
+    font-size: 1.6rem !important;
+
+    border-color: #ccc !important;
+    transition: background-color 0.2s ease, color 0.2s ease !important;
+    &:hover {
+        background-color: #fff6d6; // Vàng nhạt khi hover
+        border-color: #e0d6b8;
+        color: #c97f3a;
+    }
+}
+.icon {
+    margin-right: 8px;
+    font-size: 1.6rem;
+}
+.active {
+    background-color: #fcfae8 !important;
+    border-color: #fcfae8 !important;
+    color: #c97f3a !important;
+}
