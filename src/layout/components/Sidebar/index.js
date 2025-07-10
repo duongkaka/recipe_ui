@@ -16,7 +16,7 @@ function Sidebar() {
                 <MenuItem to="/" icon={<FontAwesomeIcon icon={faHouse} />} title={'For you'}></MenuItem>
                 <MenuItem to="/following" icon={<FontAwesomeIcon icon={faGratipay} />} title={'Folowing'}></MenuItem>
                 <MenuItem
-                    to="/myProfile"
+                    to="/myProfile/myInfo"
                     icon={<FontAwesomeIcon icon={faWpexplorer} />}
                     title={'My Profile'}
                 ></MenuItem>

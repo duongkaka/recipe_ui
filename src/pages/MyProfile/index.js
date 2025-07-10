@@ -21,7 +21,8 @@ function MyProfile({ children }) {
             <div className={cx('menu')}>
                 <ProfileMenu onSelect={setSelectedView} />
             </div>
-            <div className={cx('content')}>{renderContent()}</div>
+            {/* <div className={cx('content')}>{renderContent()}</div> */}
+            <div className={cx('content')}>{children}</div>
         </div>
     );
 }

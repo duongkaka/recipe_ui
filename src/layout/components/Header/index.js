@@ -22,6 +22,7 @@ import images from '~/assets/images';
 import Menu from '~/components/Popper/Menu';
 import { faUber } from '@fortawesome/free-brands-svg-icons';
 import Image from '~/components/Image';
+import logo2 from '~/assets/images/logo2.jpg';
 
 import { Link } from 'react-router-dom';
 import Search from '../Search';
@@ -69,7 +70,7 @@ function Header() {
             <div className={cx('inner')}>
                 <Link to="/">
                     {' '}
-                    <img src={images.logo} alt="Tiktok" />
+                    <img className={cx('img')} src={logo2} alt="FoodCham" />
                 </Link>
 
                 {/* Search */}

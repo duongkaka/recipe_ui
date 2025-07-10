@@ -3,5 +3,11 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
+    padding: 10px;
+}
+.pagination-container {
+    display: flex;
+    justify-content: center; /* C?n gi?a Pagination */
+    margin: 15px 0;
 }

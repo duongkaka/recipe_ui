@@ -7,6 +7,7 @@ import img2 from '~/assets/images/img2.jpg';
 import img3 from '~/assets/images/img3.jpg';
 import img4 from '~/assets/images/img4.jpg';
 import img5 from '~/assets/images/img5.jpg';
+import { Pagination } from '@mui/material';
 const cx = classNames.bind(styles);
 
 function Home() {
@@ -20,6 +21,15 @@ function Home() {
                 <RecipeCard img={img4} />
                 <RecipeCard img={img5} />
             </div>
+            <Pagination
+                className={cx('pagination-container')}
+                count={10}
+                page={1}
+                //      onChange={handlePageChange} // C?p nh?t trang khi thay ??i
+                color="primary"
+                variant="outlined"
+                shape="rounded"
+            />
         </div>
     );
 }

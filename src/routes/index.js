@@ -8,6 +8,9 @@ import Profile from '~/pages/Profile';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
 import MyProfile from '~/pages/MyProfile';
+import MyPosts from '~/pages/MyProfile/ProfileItem/MyPosts';
+import MySavePosts from '~/pages/MyProfile/ProfileItem/MySavePosts';
+import MyInfo from '~/pages/MyProfile/ProfileItem/MyInfo';
 
 // Public routes
 const publicRoutes = [
@@ -17,6 +20,9 @@ const publicRoutes = [
     { path: '/@:nickname', component: Profile },
     { path: '/upload', component: Upload, layout: HeaderOnly },
     { path: '/search', component: Search, layout: null },
+    { path: '/myProfile/myInfo', component: MyInfo, layout: HeaderOnly },
+    { path: '/myProfile/myPosts', component: MyPosts, layout: HeaderOnly },
+    { path: '/myProfile/mySavePosts', component: MySavePosts, layout: HeaderOnly },
 ];
 
 const privateRoutes = [];

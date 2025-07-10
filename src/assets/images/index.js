@@ -11,6 +11,7 @@ import img10 from '~/assets/images/img10.jpg';
 
 const images = {
     logo: require('~/assets/images/logo.svg').default,
+    logo2: require('~/assets/images/logo2.jpg').default,
     noImage: require('~/assets/images/no-image.png').default,
     img1: img1,
     img2: img2,

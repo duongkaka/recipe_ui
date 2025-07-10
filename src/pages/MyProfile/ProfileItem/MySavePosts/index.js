@@ -12,7 +12,7 @@ const cx = classNames.bind(styles);
 function MySavePosts() {
     return (
         <div className={cx('user-save-posts')}>
-            <strong>保存されたレシ�?</strong>
+            <strong>保存されたレシピ</strong>
             <div className={cx('posts-list')}>
                 <RecipeCard img={img5} />
                 <RecipeCard img={img4} />

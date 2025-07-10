@@ -2,7 +2,7 @@ import UserProfile from '~/pages/UserProfile';
 
 function MyInfo() {
     const user = {
-        name: 'Nguy?n V?n A',
+        name: 'Nguyen Van A',
         username: 'nguyenvana',
         email: 'nguyenvana@gmail.com',
         avatar: 'https://tse3.mm.bing.net/th/id/OIP.B1YLdd0cJeufsXhh5Wws1gHaHa?rs=1&pid=ImgDetMain',
