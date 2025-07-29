@@ -15,7 +15,6 @@ import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import Button from '~/components/Button';
 import classNames from 'classnames/bind';
 import styles from './RecipeCard.module.scss';
-
 import { motion } from 'framer-motion';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 

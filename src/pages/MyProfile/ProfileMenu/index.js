@@ -5,6 +5,7 @@ import classNames from 'classnames/bind';
 import styles from './ProfileMenu.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFloppyDisk, faMortarPestle, faUser } from '@fortawesome/free-solid-svg-icons';
+import MyProfileSidebar from '~/components/MyProfileSidebar';
 
 const cx = classNames.bind(styles);
 
@@ -12,6 +13,7 @@ function ProfileMenu({ onSelect }) {
     const [activeMenu, setActiveMenu] = useState('myInfo');
     return (
         <div className={cx('container')}>
+            <MyProfileSidebar />
             <Card className={cx('card')}>
                 <div className={cx('avatarWrapper')}>
                     <Avatar

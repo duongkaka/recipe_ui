@@ -1,0 +1,33 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff2d8; // nền sidebar màu be sáng dịu
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    text-decoration: none;
+    color: #444; // chữ đen dịu
+    border-radius: 6px;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #ffdeb4; // màu cam sáng dịu hơn khi hover
+    }
+
+    span {
+        margin-left: 8px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.menu-item.active {
+    background-color: #ffc078; // nền cam trầm đẹp mắt
+    font-weight: bold;
+    color: #5c3d00; // chữ nâu đậm
+}

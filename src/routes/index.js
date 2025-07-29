@@ -11,6 +11,7 @@ import MyProfile from '~/pages/MyProfile';
 import MyPosts from '~/pages/MyProfile/ProfileItem/MyPosts';
 import MySavePosts from '~/pages/MyProfile/ProfileItem/MySavePosts';
 import MyInfo from '~/pages/MyProfile/ProfileItem/MyInfo';
+import Login from '~/pages/Login';
 
 // Public routes
 const publicRoutes = [
@@ -23,6 +24,8 @@ const publicRoutes = [
     { path: '/myProfile/myInfo', component: MyInfo, layout: HeaderOnly },
     { path: '/myProfile/myPosts', component: MyPosts, layout: HeaderOnly },
     { path: '/myProfile/mySavePosts', component: MySavePosts, layout: HeaderOnly },
+    { path: '/login', component: Login, layout: null },
+    { path: '/logout', component: Login, layout: null },
 ];
 
 const privateRoutes = [];

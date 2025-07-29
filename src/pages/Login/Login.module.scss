@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.header {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    text-align: center;
+    color: #5c3d00;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    // Nền gradient từ cam nhạt đến be sáng dịu
+    background: radial-gradient(circle, #ffe2a8 0%, #fff2d8 100%);
+}
+
+.form {
+    background: linear-gradient(145deg, #fff0da, #ffe3b3);
+    padding: 40px 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 400px;
+
+    h5 {
+        text-align: center;
+        font-weight: bold;
+        color: #5c3d00;
+    }
+
+    button {
+        background-color: #ffc078;
+        color: #5c3d00;
+        font-weight: bold;
+        margin-top: 16px;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #ffb24d;
+        }
+    }
+}
+.body {
+    display: flex;
+    flex: 1;
+}
+.image {
+    width: 180px;
+    height: auto;
+    mix-blend-mode: multiply; // hoặc overlay, screen, soft-light, v.v.
+    opacity: 0.9; // làm dịu nhẹ nếu cần
+}
+.img {
+    width: 180px;
+    height: 70px;
+    display: block;
+    margin: 0 auto 20px;
+}
+// Footer
+footer {
+    width: 100%;
+    //  background-color: #fff0da; // nền cam nhạt dịu
+    color: #5c3d00; // nâu đậm - hợp tone thương hiệu
+    padding: 24px 16px;
+    text-align: center;
+    font-size: 1.4rem;
+    border-top: 1px solid #ffd8a8;
+
+    .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-logo {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin-bottom: 12px;
+        color: #d17a00;
+    }
+
+    .footer-links {
+        margin-top: 12px;
+        a {
+            color: #5c3d00;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #ff9f1c;
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 16px;
+        font-size: 1.2rem;
+        color: #8c6239;
+    }
+}

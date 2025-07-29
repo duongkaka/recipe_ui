@@ -22,7 +22,7 @@ import images from '~/assets/images';
 import Menu from '~/components/Popper/Menu';
 import { faUber } from '@fortawesome/free-brands-svg-icons';
 import Image from '~/components/Image';
-import logo2 from '~/assets/images/logo2.jpg';
+import logo2 from '~/assets/images/logo2.png';
 
 import { Link } from 'react-router-dom';
 import Search from '../Search';
@@ -82,9 +82,9 @@ function Header() {
                     {currentUser ? (
                         <>
                             <Tippy content="upload" placement="bottom">
-                                <button className={cx('action-icon')}>
+                                <Link to="/upload" className={cx('action-icon')}>
                                     <FontAwesomeIcon icon={faCloudArrowUp} />
-                                </button>
+                                </Link>
                             </Tippy>
                             <Tippy content="message" placement="bottom">
                                 <button className={cx('action-icon')}>

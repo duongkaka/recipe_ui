@@ -8,10 +8,12 @@ import img7 from '~/assets/images/img7.jpg';
 import img8 from '~/assets/images/img8.jpg';
 import img9 from '~/assets/images/img9.jpg';
 import img10 from '~/assets/images/img10.jpg';
+import pho from '~/assets/images/pho.png';
+import pho2 from '~/assets/images/pho2.jpg';
 
 const images = {
     logo: require('~/assets/images/logo.svg').default,
-    logo2: require('~/assets/images/logo2.jpg').default,
+    logo2: require('~/assets/images/logo2.png').default,
     noImage: require('~/assets/images/no-image.png').default,
     img1: img1,
     img2: img2,
@@ -23,6 +25,8 @@ const images = {
     img8: img8,
     img9: img9,
     img10: img10,
+    pho: pho,
+    pho2: pho2,
 };
 
 export default images;

@@ -28,6 +28,7 @@ body {
     line-height: 1.5;
     text-rendering: optimizespeed;
     color: var(--text-color);
+    animation: fadeInUp 1s ease 0s 1 normal forwards;
 }
 
 button,
@@ -41,4 +42,70 @@ a[href] {
     color: var(--text-color);
     text-decoration: none;
 }
+
+// select
+/* react-select-global.scss */
+
+/* Toàn bộ select wrapper */
+.Select__control,
+.react-select__control {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-height: 42px;
+    font-size: 14px;
+    box-shadow: none;
+    transition: border-color 0.2s;
+
+    &:hover {
+        border-color: #ff6600;
+    }
+
+    &--is-focused {
+        border-color: #ff6600 !important;
+        box-shadow: 0 0 0 1px #ff6600 !important;
+    }
+}
+
+.Select__placeholder,
+.react-select__placeholder {
+    color: #aaa;
+}
+
+.Select__menu,
+.react-select__menu {
+    z-index: 20;
+}
+
+/* Option mặc định */
+.Select__option,
+.react-select__option {
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &--is-selected {
+        background-color: #ffe5cc !important; // cam nhạt
+        color: #333;
+    }
+
+    &--is-focused {
+        background-color: #fff0e0 !important; // cam sáng khi hover
+    }
+
+    &:active {
+        background-color: #ff6600 !important; // cam đậm khi nhấn
+        color: #fff !important;
+    }
+}
+
 //Custom tippy tooltip
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

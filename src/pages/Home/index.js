@@ -1,5 +1,5 @@
 import SliderCategories from './SliderCategories';
-import RecipeCard from './RecipeCard';
+
 import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
 import img1 from '~/assets/images/img1.jpg';
@@ -8,6 +8,7 @@ import img3 from '~/assets/images/img3.jpg';
 import img4 from '~/assets/images/img4.jpg';
 import img5 from '~/assets/images/img5.jpg';
 import { Pagination } from '@mui/material';
+import RecipeCard from './RecipeCard';
 const cx = classNames.bind(styles);
 
 function Home() {

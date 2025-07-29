@@ -1,3 +1,4 @@
+import MyProfileSidebar from '~/components/MyProfileSidebar';
 import UserProfile from '~/pages/UserProfile';
 
 function MyInfo() {
@@ -12,7 +13,11 @@ function MyInfo() {
         likes: 230,
         saved: 17,
     };
-    return <UserProfile user={user} />;
+    return (
+        <div>
+            <UserProfile user={user} />
+        </div>
+    );
 }
 
 export default MyInfo;

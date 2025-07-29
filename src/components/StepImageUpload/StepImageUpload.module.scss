@@ -1,0 +1,64 @@
+.image-upload {
+    width: 100%;
+    display: inline-block;
+
+    cursor: pointer;
+
+    // Các class kích thước nên nằm ở đây
+    &.small .upload-box {
+        width: 100px;
+        height: 100px;
+    }
+
+    &.medium .upload-box {
+        width: 160px;
+        height: 160px;
+    }
+
+    &.large .upload-box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .upload-box {
+        width: 320px;
+        height: 320px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: border-color 0.3s;
+
+        &:hover {
+            border-color: #999;
+        }
+    }
+
+    .camera-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 8px;
+        opacity: 0.6;
+    }
+
+    .upload-text {
+        font-size: 14px;
+        color: #888;
+        line-height: 1.4;
+    }
+}
+
+.hidden-input {
+    display: none;
+}
+
+.preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* để ảnh không bị méo */
+    border-radius: 8px; /* thêm border-radius */
+}

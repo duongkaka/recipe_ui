@@ -5,6 +5,7 @@ import { useState } from 'react';
 import MyInfo from './ProfileItem/MyInfo';
 import MyPosts from './ProfileItem/MyPosts';
 import MySavePosts from './ProfileItem/MySavePosts';
+import MyProfileSidebar from '~/components/MyProfileSidebar';
 
 const cx = classNames.bind(styles);
 
@@ -18,6 +19,7 @@ function MyProfile({ children }) {
     };
     return (
         <div className={cx('wrapper')}>
+            <MyProfileSidebar />
             <div className={cx('menu')}>
                 <ProfileMenu onSelect={setSelectedView} />
             </div>

@@ -2,6 +2,7 @@ import { forwardRef, useState } from 'react';
 import images from '~/assets/images';
 import styles from './Image.module.scss';
 import classNames from 'classnames';
+
 const Image = forwardRef(({ className, src, ...props }, ref) => {
     const [fallback, setFallback] = useState(null);
 

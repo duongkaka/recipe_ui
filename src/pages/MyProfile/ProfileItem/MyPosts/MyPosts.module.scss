@@ -1,5 +1,12 @@
-.user-save-posts {
-    padding: 20px; /* Th?m m?t ch?t kh?ng gian */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.user-posts {
+    padding: 10px; /* Th?m m?t ch?t kh?ng gian */
     max-width: 1200px;
     margin: 0 auto;
 }

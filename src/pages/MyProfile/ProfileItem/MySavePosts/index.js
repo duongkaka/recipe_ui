@@ -8,28 +8,35 @@ import img3 from '~/assets/images/img3.jpg';
 import img4 from '~/assets/images/img4.jpg';
 import img5 from '~/assets/images/img5.jpg';
 import img6 from '~/assets/images/img6.jpg';
+import MyProfileSidebar from '~/components/MyProfileSidebar';
+import Title from '~/layout/components/Title';
+
 const cx = classNames.bind(styles);
 function MySavePosts() {
     return (
-        <div className={cx('user-save-posts')}>
-            <strong>保存されたレシピ</strong>
-            <div className={cx('posts-list')}>
-                <RecipeCard img={img5} />
-                <RecipeCard img={img4} />
-                <RecipeCard img={img3} />
-                <RecipeCard img={img2} />
-                <RecipeCard img={img1} />
-                <RecipeCard img={img6} />
+        <div className={cx('wrapper')}>
+            <MyProfileSidebar />
+            <div className={cx('user-save-posts')}>
+                <Title title="保存されたレシピ" />
+                {/* <strong>保存されたレシピ</strong> */}
+                <div className={cx('posts-list')}>
+                    <RecipeCard img={img5} />
+                    <RecipeCard img={img4} />
+                    <RecipeCard img={img3} />
+                    <RecipeCard img={img2} />
+                    <RecipeCard img={img1} />
+                    <RecipeCard img={img6} />
+                </div>
+                <Pagination
+                    className={cx('pagination-container')}
+                    count={10}
+                    page={1}
+                    //      onChange={handlePageChange} // C?p nh?t trang khi thay ??i
+                    color="primary"
+                    variant="outlined"
+                    shape="rounded"
+                />
             </div>
-            <Pagination
-                className={cx('pagination-container')}
-                count={10}
-                page={1}
-                //      onChange={handlePageChange} // C?p nh?t trang khi thay ??i
-                color="primary"
-                variant="outlined"
-                shape="rounded"
-            />
         </div>
     );
 }
