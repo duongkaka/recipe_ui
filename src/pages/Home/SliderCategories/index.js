@@ -9,6 +9,7 @@ import Image from '~/components/Image';
 const cx = classNames.bind(styles);
 
 function SliderCategories() {
+    // api
     const slides = [
         images.img1,
         images.img2,
@@ -52,17 +53,7 @@ function SliderCategories() {
             <Slider {...settings}>
                 {slides.map((src, index) => (
                     <div key={index}>
-                        <img
-                            src={src}
-                            alt={`Slide ${index + 1}`}
-                            className={cx('img')}
-                            // style={{
-                            //     width: '100%',
-                            //     height: '160px',
-                            //     objectFit: 'cover',
-                            //     borderRadius: '8px',
-                            // }}
-                        />
+                        <img src={src} alt={`Slide ${index + 1}`} className={cx('img')} />
                     </div>
                 ))}
             </Slider>
