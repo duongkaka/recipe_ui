@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/recipe_ui/static/css/main.ee4b664f.css",
+    "main.js": "/recipe_ui/static/js/main.1bd1abdc.js",
+    "static/js/787.d8f243f9.chunk.js": "/recipe_ui/static/js/787.d8f243f9.chunk.js",
+    "static/media/logo2.png": "/recipe_ui/static/media/logo2.c9577cbc199b711deaea.png",
+    "static/media/pho.png": "/recipe_ui/static/media/pho.f6a754c7de79e6663ecf.png",
+    "static/media/img1.jpg": "/recipe_ui/static/media/img1.0179dd0498c209a837da.jpg",
+    "static/media/img2.jpg": "/recipe_ui/static/media/img2.92c6f8860f159f64bf56.jpg",
+    "static/media/pho2.jpg": "/recipe_ui/static/media/pho2.40e40943dc03e5ade251.jpg",
+    "static/media/img5.jpg": "/recipe_ui/static/media/img5.3ae7d93a8bbf2b76679a.jpg",
+    "static/media/img7.jpg": "/recipe_ui/static/media/img7.f3e861be810a505f9b95.jpg",
+    "static/media/img9.jpg": "/recipe_ui/static/media/img9.bd9aef542e42152f77f8.jpg",
+    "static/media/img8.jpg": "/recipe_ui/static/media/img8.8eb02a6c969a0e1c1a65.jpg",
+    "static/media/img4.jpg": "/recipe_ui/static/media/img4.48ed36de0d35ae11dc10.jpg",
+    "static/media/img6.jpg": "/recipe_ui/static/media/img6.3ff074ae7f2e4dfb3a8d.jpg",
+    "static/media/img3.jpg": "/recipe_ui/static/media/img3.7d0516e52c2eff265ee7.jpg",
+    "static/media/img10.jpg": "/recipe_ui/static/media/img10.0a06ee8a8196656fcfd5.jpg",
+    "static/media/logo.svg": "/recipe_ui/static/media/logo.87ef64661abbb6a9094b4fef5253baa9.svg",
+    "static/media/slick.svg": "/recipe_ui/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/recipe_ui/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/recipe_ui/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/recipe_ui/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/recipe_ui/index.html",
+    "main.ee4b664f.css.map": "/recipe_ui/static/css/main.ee4b664f.css.map",
+    "main.1bd1abdc.js.map": "/recipe_ui/static/js/main.1bd1abdc.js.map",
+    "787.d8f243f9.chunk.js.map": "/recipe_ui/static/js/787.d8f243f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee4b664f.css",
+    "static/js/main.1bd1abdc.js"
+  ]
+}
