@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
 import { DefaultLayout } from '~/layout';
 
+const BASENAME = '/recipe_ui';
 function App() {
     return (
-        <Router>
+        <Router basename={BASENAME}>
             <div className="App">
                 <Routes>
                     {publicRoutes.map((route, index) => {
